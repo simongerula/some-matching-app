@@ -1,0 +1,44 @@
+display_information:
+  name: Coffee Matchup
+  description: Matches teammates randomly for coffee catchups
+  background_color: '#4A154B'
+features:
+  bot_user:
+    display_name: Coffee Matchup
+    always_online: true
+  slash_commands:
+    # Socket Mode delivers commands, so this URL is never called - it just
+    # satisfies the manifest validator, which rejects an empty url.
+    - command: /coffee-theme
+      url: 'https://example.com/slack/commands'
+      description: Post this week's catchup theme
+      usage_hint: run it in the channel where you want the theme posted
+      should_escape: false
+    - command: /matchup
+      url: 'https://example.com/slack/commands'
+      description: Match registered people up for a coffee catchup
+      usage_hint: run it anywhere - matches are announced in #coffee-catchup
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - app_mentions:read
+      - channels:manage
+      - channels:read
+      - chat:write
+      - im:history
+      - im:read
+      - im:write
+      - mpim:write
+      - users:read
+settings:
+  event_subscriptions:
+    bot_events:
+      - member_joined_channel
+      - message.im
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

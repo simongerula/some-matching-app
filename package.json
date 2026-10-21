@@ -1,0 +1,24 @@
+{
+  "name": "matching-app",
+  "version": "1.0.0",
+  "description": "Hackathon demo: Slack app that matches teammates for coffee catchups",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@slack/bolt": "^5.1.0",
+    "dotenv": "^18.0.8"
+  },
+  "devDependencies": {
+    "js-yaml": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}

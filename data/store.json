@@ -1,0 +1,18 @@
+{
+  "users": {
+    "U0CAQB89LA1": {
+      "id": "U0CAQB89999",
+      "frequency": "weekly",
+      "intent": "group",
+      "at": "2026-10-21T04:56:48.795Z"
+    }
+  },
+  "matches": [
+    {
+      "users": ["U0CAQB89999"],
+      "intent": "group",
+      "theme": "Share a song you have had on repeat lately - and why it hits",
+      "at": "2026-10-21T04:58:00.192Z"
+    }
+  ]
+}
